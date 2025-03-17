@@ -1,153 +1,427 @@
+
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charSet="utf-8"/>
-        <meta property="og:url" content="//vantay.click"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <link rel="shortcut icon" href="//i.imgur.com/LC5mbkf.jpg" type="image/x-icon">
-        <meta property="og:type" content="website"/>
-        <meta property="og:title" content="Welcome ThanhDieu &mdash; Profile Home"/>
-        <meta name="next-head-count" content="13"/>
-        <title>HaVanTay &mdash; Thông Tin Thanh Toán</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin="true"/>
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="true"/>
-        <link rel="stylesheet" href="./_static/css/theme.css"/>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="./_static/css/mother.css" />
-        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-    </head>
-    <body onload="__ThanhDieuDev()">
-        <div id="__next">
-            <main class="HeadLayout_layout__">
-                <div class="container-fluid">
-                    <div class="_plateContainer__">
-                        <div style="box-shadow: -1px 0px 15px -6px rgb(99, 111, 219);" class="_infoContainer__ widget-content ___bodystyle">
-                                <img class="ThanhDieu_Avatar" src="/taoanhdep_mega_logo_12639.jpeg"/>
-                            <h2 class="ThanhDieu_Name">Hà Văn Tây &ensp;<img height="17" width="17" src="./_static/img/vietnam-number-one.gif"/></h2>
-                             <h4 class="TieuSu__">From HaVanTay With Love &ensp;<img style="vertical-align: middle;" height="17" width="17" src="./_static/img/vuong-mien.webp"/></h4>
-                             <div class="buttons___">
-                                <div class="row-thanhdieu">
-                                   <button onclick="alert('@Kết bạn với mình nhé');setTimeout(function(){window.open('//facebook.com/Teii.husc');}, 123);" class="facebook">
-                                    <span><p style="margin-top: 10px;"><i class="fab fa-facebook"></i></p></span>
-                                   Facebook</button>
-                                </div>
-                                <div class="row-thanhdieu">
-                                   <button onclick="alert('@Follow Youtube Me Pls ?!');setTimeout(function(){window.open('//www.youtube.com/@hvtay.z156');}, 123);" class="youtube">
-                                   <span><p style="margin-top: 10px;"><i class="fab fa-youtube"></i></p></span>
-                                   Youtube</button>
-                                </div>
-                             </div>
-                            <div class="Hr_tdtv"></div>                                                  
-                       <!-- <div class="Facebook_Tdtv" >
-                            <button type="button" class="button_facebook">
-                                <span class="button_facebook__text">Facebook Contact</span>
-                                <span class="button_facebook__icon">
-                                    <i class="fab fa-facebook"></i>
-                                </span>
-                            </button>
-                        </div>
-                        <br>
-                        <div class="Facebook_Tdtv" >
-                            <button type="button" class="button_messager">
-                                <span class="button_messager__text">Messenger Contact</span>
-                                <span class="button_messager__icon">
-                                    <i class='fab fa-facebook-messenger'></i>
-                                </span>
-                            </button>
-                        </div>-->    
-                            <div class="Descriptions____">
-                                <span class="DetailText__">
-                                    <b style="font-size: 17px;color: rgb(201, 201, 201);" class="DetailText__">&mdash; Thông Tin Thanh Toán &mdash;</b>
-                                </span>
-                            </div>
-                            <div class="grid w-full cardsContainer__">
-                                <div class="col col-12 col-md-6 ">
-                                    <div class="infoCard__ ___bodystylecard">
-                                        <img style="margin-top: 8px;" height="60" width="60" src="https://adsota.com/img/tpbank-logo.png"/>
-                                        <u class="STK__">&ensp;TP Bank&ensp;</u>
-                                        <span onclick="copyText('99876599999');stk();" style="font-size: 13px;margin-left: 27px;margin-top: 8px;">Số Tài Khoản: 99876599999 <img height="17" width="17" src="./_static/img/trai-tim.gif"/></span>
-                                        <span onclick="copyText('HA VAN TAY');chutaikhoan();" style="font-size: 13px;margin-left: 27px;margin-top: 8px;">Chủ Tài Khoản: HA VAN TAY <img height="17" width="17" src="./_static/img/trai-tim.gif"/></span>
-                                    </div>
-                                </div>
-                                <div class="col col-12 col-md-6">
-                                    <div class="infoCard__ ___bodystylecard">
-                                        <img style="margin-top: 18px;" height="42" width="42" src="https://upload.wikimedia.org/wikipedia/vi/f/fe/MoMo_Logo.png"/>
-                                        <u style="margin-top: 5px;" class="STK__">&ensp;Momo Payment&ensp;</u>
-                                        <span onclick="copyText('0835269787');stk();" style="font-size: 13px;margin-left: 27px;margin-top: 8px;">Số Tài Khoản: 0835269787 <img height="15" width="15" src="./_static/img/trai-tim.gif"/></span>
-                                        <span onclick="copyText('HA VAN TAY');chutaikhoan();" style="font-size: 13px;margin-left: 27px;margin-top: 8px;">Chủ Tài Khoản: HA VAN TAY <img height="17" width="17" src="./_static/img/trai-tim.gif"/></span>
-                                    </div>
-                                </div>
-                                <div class="col col-12 col-md-6">
-                                    <div class="infoCard__ ___bodystylecard">
-                                        <img style="margin-top: 4px" height="60" width="137" src="./_static/img/logo-mbbank.png"/>
-                                        <u style="margin-top: -5px;" class="STK__">&ensp;Mb Bank&ensp;</u>
-                                        <span onclick="copyText('3015062005');stk();" style="font-size: 13px;margin-left: 27px;margin-top: 8px;">Số Tài Khoản: 3015062005 <img height="17" width="17" src="./_static/img/trai-tim.gif"/></span>
-                                        <span onclick="copyText('HA VAN TAY');chutaikhoan();" style="font-size: 13px;margin-left: 27px;margin-top: 8px;">Chủ Tài Khoản: HA VAN TAY <img height="17" width="17" src="./_static/img/trai-tim.gif"/></span>
-                                    </div>
-                                </div>
-                                <div class="col col-12 col-md-6">
-                                    <div class="infoCard__ ___bodystylecard">
-                                        <img style="margin-top: 10px;" height="40" width="150" src="./_static/img/logo-card5s.png"/>
-                                        <u style="margin-top: 5px;" class="STK__">&ensp;Card5s.Vn&ensp;</u>
-                                        <span onclick="copyText('0835269787');stk();" style="font-size: 13px;margin-left: 27px;margin-top: 8px;">Số Tài Khoản: 0835269787 <img height="17" width="17" src="./_static/img/trai-tim.gif"/></span>
-                                        <span onclick="copyText('HA VAN TAY');chutaikhoan();" style="font-size: 13px;margin-left: 27px;margin-top: 8px;">Chủ Tài Khoản: HA VAN TAY <img height="17" width="17" src="./_static/img/trai-tim.gif"/></span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                   
-                </div>
-            </main>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sim Mạng Vinaphone</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="favicon_vina1.png">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            align-items: flex-start;
+            padding: 20px;
+            justify-content: center;
+        }
+
+        .update-box {
+            width: 100%;
+            text-align: center;
+            background: #ffeb3b;
+            padding: 10px;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+
+        .card, .price-box {
+            width: 100%;
+            max-width: 350px;
+            border-radius: 10px;
+            overflow: hidden;
+            background: #fff;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 15px;
+        }
+
+        .card-header {
+            background: #1e90ff;
+            color: #fff;
+            padding: 10px;
+            font-size: 20px;
+            font-weight: bold;
+            position: relative;
+        }
+
+        .card-header span {
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            background: #fff;
+            color: #1e90ff;
+            padding: 5px 10px;
+            border-radius: 15px;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        .card-body {
+            padding: 15px;
+        }
+
+        .info {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .info div {
+            text-align: center;
+            flex: 1;
+        }
+
+        .info div img {
+            width: 40px;
+            height: 40px;
+            margin-bottom: 5px;
+        }
+
+        .info div span {
+            display: block;
+            font-size: 14px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .details {
+            text-align: left;
+            font-size: 14px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .details ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .details ul li {
+            margin-bottom: 5px;
+            display: flex;
+            align-items: center;
+        }
+
+        .details ul li::before {
+            content: "✔";
+            color: #1e90ff;
+            margin-right: 8px;
+        }
+
+        .esim {
+            font-weight: bold;
+            color: #333;
+        }
+
+        .esim span {
+            color: #1e90ff;
+        }
+
+        .price-box {
+            text-align: center;
+            background: #f8f8f8;
+            border-radius: 10px;
+            padding: 20px;
+        }
+
+        .price-box h3 {
+            color: #1e90ff;
+            margin-bottom: 10px;
+            font-size: 18px;
+        }
+
+        .price {
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .original-price {
+            color: gray;
+            text-decoration: line-through;
+        }
+
+        .discounted-price {
+            color: red;
+            font-size: 22px;
+        }
+
+        .out-of-stock {
+            color: red;
+            font-size: 16px;
+            font-weight: bold;
+            margin-left: 5px;
+        }
+
+        .separator {
+            width: 100%;
+            height: 2px;
+            background: #ddd;
+            margin: 20px 0;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .card, .price-box {
+                width: 90%;
+                max-width: 400px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="update-box">Cập nhật báo giá ngày 17/03/2025</div>
+</div>
+
+<div class="separator"></div>
+
+<div class="separator"></div>
+  <div class="container">
+    <div class="card">
+        <div class="card-header">
+            12TD49
+            <span>vinaphone</span>
         </div>
-function copyText(textToCopy) {
-    var CopyTextarea = document.createElement("textarea");
-    CopyTextarea.textContent = textToCopy;
-    document.body.appendChild(CopyTextarea);
-    CopyTextarea.select();
-    document.execCommand('copy');
-    document.body.removeChild(CopyTextarea);
-}
-  function chutaikhoan() {
-  Toastify({
-      text: "Đã copy chủ tài khoản vào bộ nhớ tạm",
-      duration: 4200,
-      backgroundColor: "green"
-    }).showToast();
-    return;
-}
-function stk() {
-  Toastify({
-      text: "Đã copy số tài khoản vào bộ nhớ tạm",
-      duration: 4200,
-      backgroundColor: "green"
-    }).showToast();
-    return;
-}
-function __ThanhDieuDev() {thanhdieunoti();}
-function thanhdieunoti() {
-  swal({
-    content: {
-      element: "div",
-      attributes: {
-        innerHTML: `
-          <h2 class="text-danger">Thông Tin Thanh Toán !</h2>
-          <h5 class="text-warning"><strong>Copy số tài khoản 1 cách dễ dàng và nhanh chóng.</strong></h5>
-        `,
-      },
-    },
-    buttons: {
-      confirm: {
-        text: "OK",
-        className: "swal-button swal-button--confirm",
-      },
-    },
-  });
-}
-  </script>
-    </body>
+        <div class="card-body">
+            <div class="info">
+                <div>
+                    <img src="https://cdn-icons-png.flaticon.com/512/1163/1163624.png" alt="Data">
+                    <span>100GB<br>Data/Tháng</span>
+                </div>
+                <div>
+                    <img src="https://cdn-icons-png.flaticon.com/512/724/724664.png" alt="Nội mạng">
+                    <span class="disabled">Có<br>Nội mạng</span>
+                </div>
+                <div>
+                    <img src="https://cdn-icons-png.flaticon.com/512/724/724664.png" alt="Ngoại mạng">
+                    <span class="disabled">Có<br>Ngoại mạng</span>
+                </div>
+            </div>
+            <div class="details">
+                <ul>
+                    <li>Có 100GB Tốc Độ Cao, Hết Dung Lượng Ngừng Truy Cập</li>
+                    <li>Data không bị chia ngày chia giờ</li>
+                    <li>Trọn Gói 12 Tháng, Không Phải Nạp Thêm Tiền</li>
+                    <li>Sim  nguyên kít đăng ký chính chủ</li>
+                    <li>Từ năm thứ 2 tháng 49K hoặc gia hạn 490k/năm</li>
+                    <li>Sim có nghe gọi bình thường,Multisim</li>
+                </ul>
+            </div>
+            <div class="esim">
+                Hỗ trợ Esim: <span>Có (Fee 50K) </span>
+            </div>
+            <div class="esim">
+                LH Đặt Hàng Zalo: <span><a href=http://zalo.me/0357855015>035-7855-015</a></span>
+                </div>
+            <div class="chonso">
+                Chọn Số: <span><a href=https://docs.google.com/spreadsheets/d/1NT-Yptm_c5L4fcm0PnpYyikKhn04vHknXQqkx96WVNY/edit?usp=sharing>Click vào để chọn số</a></span>
+           </div>
+        </div>
+    </div>
+    
+    <div class="price-box">
+        <h3>Giá Sim Chưa Kích Hoạt</h3>
+        <p class="price discounted-price">690.000đ</p>
+       <p class="price original-price">Giá gốc 1.150.000đ</p>
+    </div>
+    <div class="price-box">
+        <h3>Giá Sim Đã Kích Hoạt</h3>
+        <p class="price discounted-price">710.000đ - Hết Hàng</p>
+       <p class="price original-price">Giá gốc 1.250.000đ</p>
+    </div>
+</div>
+
+<!-- Nội dung gốc giữ nguyên ở đây -->
+   <div class="container">
+    <div class="card">
+        <div class="card-header">
+            U1500
+            <span>vinaphone</span>
+        </div>
+        <div class="card-body">
+            <div class="info">
+                <div>
+                    <img src="https://cdn-icons-png.flaticon.com/512/1163/1163624.png" alt="Data">
+                    <span>500GB<br>Data/Tháng</span>
+                </div>
+                <div>
+                    <img src="https://cdn-icons-png.flaticon.com/512/724/724664.png" alt="Nội mạng">
+                    <span class="disabled">Không Nghe<br>Gọi Được</span>
+                </div>
+                <div>
+                    <img src="https://cdn-icons-png.flaticon.com/512/724/724664.png" alt="Ngoại mạng">
+                    <span class="disabled">Phát Wifi <br>Rất tốt</span>
+                </div>
+            </div>
+            <div class="details">
+                <ul>
+                    <li>Miễn phí sử dụng 12 tháng liên tục</li>
+                    <li>Mỗi tháng 500Gb không chia ngày</li>
+                    <li>Phát wifi thả ga,Multisim</li>
+                    <li>Hàng nguyên kích vào tên chính chủ</li>
+                    <li>Hàng sẵn dùng lắp là sử dụng</li>
+                </ul>
+            </div>
+            <div class="esim">
+                Hỗ trợ Esim: <span>Có (Fee 50K) </span>
+            </div>
+            <div class="esim">
+                LH Đặt Hàng Zalo: <span><a href=http://zalo.me/0357855015>035-7855-015</a></span>
+                </div>
+        </div>
+    </div>
+    
+        <div class="price-box">
+        <h3>Giá Sim Đã Kích Hoạt</h3>
+        <p class="price discounted-price">870.000đ</p>
+        <p class="price original-price">Giá gốc 1.700.000đ</p>   
+    </div>
+    <div class="price-box">
+        <h3>Giá Nguyên Kít Chưa Kích Hoạt</h3>
+        <p class="price discounted-price">900.000đ</p>
+        <p class="price original-price">Giá gốc 1.900.000đ</p>
+    </div>
+</div>
+  
+    <div class="separator"></div>
+<div class="container">
+    <div class="card">
+        <div class="card-header">
+            BIG50Y
+            <span>vinaphone</span>
+        </div>
+        <div class="card-body">
+            <div class="info">
+                <div>
+                    <img src="https://cdn-icons-png.flaticon.com/512/1163/1163624.png" alt="Data">
+                    <span>5GB<br>Data/Ngày</span>
+                </div>
+                <div>
+                    <img src="https://cdn-icons-png.flaticon.com/512/724/724664.png" alt="Nội mạng">
+                    <span class="disabled">Có<br>Nội mạng</span>
+                </div>
+                <div>
+                    <img src="https://cdn-icons-png.flaticon.com/512/724/724664.png" alt="Ngoại mạng">
+                    <span class="disabled">Có<br>Ngoại mạng</span>
+                </div>
+            </div>
+            <div class="details">
+                <ul>
+                    <li>Mỗi ngày 5Gb tốc độ cao</li>
+                    <li>Miễn phí data truy cập Zalo, YouTube, TikTok</li>
+                    <li>Gia hạn 50K/tháng</li>
+                    <li>Sử dụng lâu dài nhiều năm</li>
+                    <li>Hàng nguyên kít vào tên chính chủ</li>
+                    <li>Sim nghe gọi bình thường,Multisim</li>
+                </ul>
+            </div>
+            <div class="esim">
+                Hỗ trợ Esim: <span>Có (Fee 50K) </span>
+            </div>
+          <div class="esim">
+            LH Đặt Hàng Zalo: <span><a href=http://zalo.me/0357855015>035-7855-015</a></span>
+            </div>
+            <div class="chonso">
+                Chọn Số: <span><a href=https://docs.google.com/spreadsheets/d/1NT-Yptm_c5L4fcm0PnpYyikKhn04vHknXQqkx96WVNY/edit?usp=sharing>Click vào để chọn số</a></span>
+           </div>
+        </div>
+    </div>
+    
+    <div class="price-box">
+        <h3>Giá Sim Đã Kích Hoạt</h3>
+        <p class="price discounted-price">410.000đ- Hết Hàng</p>
+       <p class="price original-price">Giá gốc 790.000đ </p>
+    </div>
+    
+    <div class="price-box">
+        <h3>Giá Nguyên Kít Chưa Kích Hoạt </h3>
+        <p class="price discounted-price">460.000đ</p>
+       <p class="price original-price">Giá gốc 870.000đ</p>
+    </div>
+</div>
+  <div class="separator"></div>
+  <div class="container">
+    <div class="card">
+        <div class="card-header">
+            VINA125
+            <span>vinaphone</span>
+        </div>
+        <div class="card-body">
+            <div class="info">
+                <div>
+                    <img src="https://cdn-icons-png.flaticon.com/512/1163/1163624.png" alt="Data">
+                    <span>125GB<br>Data/Tháng</span>
+                </div>
+                <div>
+                    <img src="https://cdn-icons-png.flaticon.com/512/724/724664.png" alt="Nội mạng">
+                    <span class="disabled">Không<br>Nội mạng</span>
+                </div>
+                <div>
+                    <img src="https://cdn-icons-png.flaticon.com/512/724/724664.png" alt="Ngoại mạng">
+                    <span class="disabled">Không<br>Ngoại mạng</span>
+                </div>
+            </div>
+            <div class="details">
+                <ul>
+                    <li>Có 125GB Tốc Độ Cao, Hết Dung Lượng Ngừng Truy Cập</li>
+                    <li>Trọn Gói 12 Tháng, Không Phải Nạp Thêm Tiền</li>
+                    <li>Sim trả trước kích gói 16/03/2025 </li>
+                    <li>Sim sẵn dùng chỉ để vào mạng</li>
+                </ul>
+            </div>
+            <div class="esim">
+                Hỗ trợ Esim: <span>Có (Fee 50K) </span>
+            </div>
+            <div class="esim">
+                LH Đặt Hàng Zalo: <span><a href=http://zalo.me/0357855015>035-7855-015</a></span>
+                </div>
+        </div>
+    </div>
+    
+    <div class="price-box">
+        <h3>Giá Sim Đã Kích Hoạt</h3>
+        <p class="price discounted-price">760.000đ </p>
+       <p class="price original-price">Giá gốc 1.299.000đ </p>
+    </div>
+    <div class="price-box">
+        <h3>Giá Sim Nguyên Kít Chưa Kích Hoạt</h3>
+        <p class="price discounted-price">860.000đ - Hết Hàng</p>
+       <p class="price original-price">Giá gốc 1.499.000đ </p>
+    </div>
+</div>
+
+<div class="separator"></div>
+
+<div class="container">
+    <div class="price-box">
+        <h3>Chính Sách Thanh Toán, Giao Hàng & Bảo Hành</h3>
+        <p class="details">- eSIM +50K làm online luôn và trả trước.</p>
+        <p class="details">- SIM vật lý ship COD, người nhận trả phí.</p>
+        <p class="details">- Thanh toán trước được freeship.</p>
+        <p class="details">- Giao hàng kiểm tra và thanh toán toàn quốc</p>
+        <p class="details">- Toàn bộ sim bán ra cam kết đúng gói cước và thời gian sử dụng</p>
+        <p class="details">- LH CSKH và Bảo Hành (Zalo) : 0357855015(Tây) </a> </p>
+    </div>
+</div>
+
+</body>
 </html>
